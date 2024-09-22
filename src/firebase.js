@@ -1,6 +1,6 @@
 // src/firebase.js
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+
 import { getDatabase } from "firebase/database"; // Import Firebase Realtime Database
 
 // Twoja konfiguracja Firebase
@@ -17,7 +17,7 @@ const firebaseConfig = {
 
 // Inicjalizacja Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
 
 // Inicjalizacja bazy danych
 const database = getDatabase(app); // Poprawna inicjalizacja bazy danych
