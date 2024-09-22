@@ -1,7 +1,7 @@
 // src/components/ProposalForm.js
 import React, { useState } from 'react';
 import { database } from '../firebase';
-import { ref, set } from 'firebase/database';
+
 
 const ProposalForm = () => {
   const [title, setTitle] = useState('');
