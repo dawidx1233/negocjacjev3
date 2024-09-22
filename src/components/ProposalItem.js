@@ -3,7 +3,7 @@ import React from 'react';
 import { database } from '../firebase';
 
 const ProposalItem = ({ proposal }) => {
-  const { id, title, description, status } = proposal;
+  const { id, title, description } = proposal; // Usunięto 'status'
 
   const updateStatus = (newStatus) => {
     database.ref('proposals/' + id).update({ status: newStatus });
